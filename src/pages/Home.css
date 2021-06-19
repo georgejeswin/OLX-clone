@@ -8,3 +8,8 @@
   object-fit: cover;
   align-content: center;
 }
+.home__cards {
+  padding: 20px 70px;
+  display: flex;
+  flex-wrap: wrap;
+}

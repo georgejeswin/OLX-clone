@@ -1,0 +1,38 @@
+.card {
+  min-width: 300px;
+  padding: 5px;
+  margin: 10px;
+}
+.card__top {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: space-between;
+}
+.card__top img {
+  max-height: 150px;
+}
+.card__top-fas {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.card__bottom h2 {
+  margin: 0;
+  font-size: x-large;
+  font-weight: bold;
+}
+.card__bottom p {
+  margin: 0;
+}
+.card__model {
+  color: gray;
+}
+.card__own {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(151, 147, 147);
+  font-size: 14px;
+}
