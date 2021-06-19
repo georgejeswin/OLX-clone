@@ -1,0 +1,81 @@
+.nav__logo {
+  max-width: 50px;
+}
+.navbar li {
+  list-style: none;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 70px;
+}
+.nav__country {
+  min-width: 100px;
+  width: 230px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 3px;
+}
+.nav__country-left {
+  display: flex;
+  justify-content: space-between;
+}
+.nav__searchbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__search {
+  min-width: 100px;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  padding: 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.nav__searchbar .fas {
+  background-color: rgb(54, 49, 49);
+  padding: 16px;
+  color: white;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.nav__drop {
+  color: black;
+  font-size: medium;
+  font-weight: 500;
+}
+.nav__drop:focus {
+  color: black;
+}
+.nav__login {
+  display: flex;
+  margin: 0;
+}
+.nav__login p {
+  margin: 0;
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.nav__button {
+  width: 100px;
+  padding: 7px;
+  border-radius: 30px;
+  border-top: 5px solid rgb(113, 184, 202);
+  border-right: 5px solid blue;
+  border-left: 5px solid orange;
+  border-bottom: 5px solid orange;
+}
+.nav__button:focus {
+  outline: none;
+}
