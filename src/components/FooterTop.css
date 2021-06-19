@@ -1,0 +1,19 @@
+.footerTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 70px;
+}
+.footerTop__sep {
+  height: 100px;
+  width: 1px;
+  background-color: rgb(197, 193, 193);
+}
+.footerTop__content h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.footerTop__right img {
+  max-width: 150px;
+  padding: 10px;
+}

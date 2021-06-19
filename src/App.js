@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import FooterBottom from "./components/FooterBottom";
+import FooterTop from "./components/FooterTop";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
         </Switch>
+        <FooterTop />
         <Footer />
         <FooterBottom />
       </Router>
