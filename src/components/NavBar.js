@@ -1,8 +1,24 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useHistory } from "react-router-dom";
+import { AuthContext, FirebaseContext } from "../store/Context";
 import "./NavBar.css";
 
 const NavBar = () => {
+  const history = useHistory();
+  const { user } = useContext(AuthContext);
+  const { firebase } = useContext(FirebaseContext);
+  const handleLogout = () => {
+    firebase.auth().signOut();
+    history.push("/login");
+  };
+  const handleClick = () => {
+    if (user) {
+      history.push("/sell");
+    } else {
+      history.push("/login");
+    }
+  };
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav sticky-top">
@@ -31,7 +47,7 @@ const NavBar = () => {
         <li className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle nav__drop"
-            href="#"
+            href="/"
             id="navbarDropdown"
             role="button"
             data-toggle="dropdown"
@@ -49,11 +65,20 @@ const NavBar = () => {
             </Link>
           </div>
         </li>
-        <Link to="/login" className="nav__login">
-          <p>Login</p>
-        </Link>
-        <button className="nav__button">
-          <i class="fas fa-plus"></i> Sell
+        {user ? (
+          <p className="nav__login nav__user">{user.displayName}</p>
+        ) : (
+          <Link to="/login" className="nav__login">
+            <p>Login</p>
+          </Link>
+        )}
+        {user && (
+          <p className="nav__login mx-3 nav__logout" onClick={handleLogout}>
+            Logout
+          </p>
+        )}
+        <button className="nav__button" onClick={handleClick}>
+          <i className="fas fa-plus"></i> Sell
         </button>
       </nav>
     </div>

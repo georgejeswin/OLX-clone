@@ -1,0 +1,51 @@
+.sell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.sell__form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 50px;
+}
+.sell__form label {
+  font-weight: 600;
+  margin-top: 10px;
+}
+.sell__form input {
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 2px;
+  margin: 5px;
+  width: 250px;
+}
+.sell__form input:focus {
+  outline: none;
+}
+.sell__image {
+  border: none !important;
+  border-bottom: 1px solid #000 !important;
+  margin-top: 20px !important;
+}
+::-webkit-file-upload-button {
+  background: none;
+  border: none;
+  background-image: url("https://pics.freeicons.io/uploads/icons/png/17409946451553073813-512.png");
+}
+@media only screen and (max-width: 1000px) {
+  .sell {
+    margin-top: 70px;
+    padding: 20px;
+    width: 100vw;
+    overflow: hidden;
+  }
+  .sell__form {
+    padding: 10px;
+    width: 90vw;
+  }
+  .sell__form input {
+    width: 80vw;
+  }
+}

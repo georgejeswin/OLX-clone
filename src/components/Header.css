@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 70px;
+  margin-top: 90px;
 }
 .header__all {
   font-weight: 500;
@@ -17,4 +18,9 @@
 .header__items:hover {
   text-decoration: none;
   color: rgb(40, 196, 196);
+}
+@media only screen and (max-width: 1000px) {
+  .header {
+    display: none;
+  }
 }

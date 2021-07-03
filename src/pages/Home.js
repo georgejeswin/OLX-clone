@@ -1,24 +1,17 @@
 import React from "react";
 import Card from "../components/Card";
 import "./Home.css";
+import FooterTop from "../components/FooterTop";
+import Banner from "../images/olx.jpeg";
 
 const Home = () => {
   return (
     <div className="home">
-      <img
-        src="https://statics.olx.in/external/base/img/hero-bg-in.jpg"
-        alt=""
-      />
+      <img src={Banner} alt="" />
       <div className="home__cards">
         <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
       </div>
+      <FooterTop />
     </div>
   );
 };

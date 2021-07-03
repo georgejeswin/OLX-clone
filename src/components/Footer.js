@@ -21,10 +21,10 @@ const Footer = () => {
             <td>About OLX Group</td>
             <td>Help</td>
             <td className="td__items">
-              <i class="fab fa-facebook-f"></i>
-              <i class="fab fa-twitter"></i>
-              <i class="fab fa-instagram"></i>
-              <i class="fab fa-youtube"></i>
+              <i className="fab fa-facebook-f"></i>
+              <i className="fab fa-twitter"></i>
+              <i className="fab fa-instagram"></i>
+              <i className="fab fa-youtube"></i>
             </td>
           </tr>
           <tr>
@@ -32,7 +32,7 @@ const Footer = () => {
             <td>Hyderabad</td>
             <td>Careers</td>
             <td>Sitemap</td>
-            <td></td>
+            <td>_</td>
           </tr>
           <tr>
             <td>Chennai</td>
@@ -40,7 +40,7 @@ const Footer = () => {
             <td>Contact us</td>
             <td>Legal & Privacy Information</td>
             <td></td>
-          </tr>{" "}
+          </tr>
           <tr>
             <td>Pune</td>
             <td>Nashik</td>
